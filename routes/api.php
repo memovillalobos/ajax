@@ -13,4 +13,4 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::resource('students', 'StudentsController', ['only' => ['index', 'store', 'show']]);
+Route::resource('students', 'StudentsController', ['only' => ['index', 'store', 'show', 'destroy']]);

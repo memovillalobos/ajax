@@ -31,4 +31,9 @@ class StudentsController extends Controller
       $student = Student::create($request->all());
       return response()->json(['status' => 'ok', 'student' => $student]);
     }
+
+    public function destroy(Student $student){
+      $student->delete();
+      return response()->json(['status' => 'ok']);
+    }
 }
